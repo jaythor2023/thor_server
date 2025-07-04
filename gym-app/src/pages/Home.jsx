@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ActiveMembers from "../components/ActiveMembers";
 import TrainingCards from "../components/TrainingCards";
 import ContactSection from "../components/ContactSection";
+import AdminAccessButton from "../components/AdminAccessButton";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
 
         <section className="rounded-2xl shadow-xl border border-gray-800 bg-gray-900 bg-opacity-50 backdrop-blur-lg p-6 md:p-10">
           <ContactSection />
+          <AdminAccessButton />
         </section>
       </main>
     </div>
