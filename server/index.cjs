@@ -9,7 +9,13 @@ const PORT = 5000;
 const BOOKINGS_FILE = path.join(__dirname, "booking.json");
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://thor-frontend.vercel.app", // ✅ your Vercel frontend
+    methods: ["GET", "POST"],
+    credentials: false,
+  })
+);
 app.use(bodyParser.json());
 
 // Helper: Read bookings from file
