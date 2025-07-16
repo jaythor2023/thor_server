@@ -11,7 +11,7 @@ const BOOKINGS_FILE = path.join(__dirname, "booking.json");
 // Middleware
 app.use(
   cors({
-    origin: "https://thor-frontend.vercel.app", // ✅ your Vercel frontend
+    origin: "https://thor-frontend.vercel.app",
     methods: ["GET", "POST"],
     credentials: false,
   })
